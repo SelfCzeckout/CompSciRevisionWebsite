@@ -1,0 +1,612 @@
+<html id="Paper2">
+	<head>
+		<title>DataGuide</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="Stylesheet.css" style="text/css">
+	</head>
+
+	<body>
+		<div id="HomeBackground">
+			<div id="NavBar">
+				<a href="DataGuideHome.html#MainPageHome">DataGuide <img src="Images/LogoImage.JPG" style="width: 20px;"></a>
+				<a href="DataGuideHome.html#MainPagePaper1">Paper1</a>
+				<a href="DataGuideHome.html#MainPagePaper2">Paper2</a>
+				<a href="DataGuideHome.html#MainPageNEA">NEA</a>
+				<a href="DataGuideHome.html#MainPageGlossary">Glossary</a>
+			</div>
+		
+			<div id="MainPageHome" class="MainPages">
+				<div class="MainContent">
+					<div class="LeftContent">
+						<ul>
+							<p><li><a href="#4.5.1">4.5.1 Number systems</a></li>
+							<li><a href="#4.5.2">4.5.2 Number bases</a></li>
+							<li><a href="#4.5.3">4.5.3 Units of information</a></li>
+							<li><a href="#4.5.4">4.5.4 Binary number system</a></li>
+							<li><a href="#4.5.5">4.5.5 Information coding systems</a></li>
+							<li><a href="#4.5.6">4.5.6 Representing images, sound and other data</a></li>
+							<li><a href="#4.6.1">4.6.1 Hardware and software</a></li>
+							<li><a href="#4.6.2">4.6.2 Classification of programming languages</a></li>
+							<li><a href="#4.6.3">4.6.3 Types of program translator</a></li>
+							<li><a href="#4.6.4">4.6.4 Logic gates</a></li>
+							<li><a href="#4.6.5">4.6.5 Boolean algebra</a></li>
+							<li><a href="#4.7.1">4.7.1 Internal hardware components of a computer</a></li>
+							<li><a href="#4.7.2">4.7.2 The stored program concept</a></li>
+							<li><a href="#4.7.3">4.7.3 Structure and role of the processor and its components</a></li>
+							<li><a href="#4.7.4">4.7.4 External hardware devices</a></li>
+							<li><a href="#4.8.1">4.8.1 Individual (moral), social (ethical), legal and cultural issues and opportunities</a></li>
+							<li><a href="#4.9.1">4.9.1 Communication</a></li>
+							<li><a href="#4.9.2">4.9.2 Networking</a></li>
+							<li><a href="#4.9.3">4.9.3 The Internet</a></li>
+							<li><a href="#4.9.4">4.9.4 The Transmission Control Protocol/Internet Protocol (TCP/IP) protocol</a></li>
+							<li><a href="#4.10.1">4.10.1 Conceptual data models and entity relationship modelling</a></li>
+							<li><a href="#4.10.2">4.10.2 Relational databases</a></li>
+							<li><a href="#4.10.3">4.10.3 Database design and normalisation techniques</a></li>
+							<li><a href="#4.10.4">4.10.4 Structured Query Language (SQL)</a></li>
+							<li><a href="#4.10.5">4.10.5 Client server databases</a></li>
+							<li><a href="#4.11.1">4.11.1 Big Data</a></li>
+							<li><a href="#4.12.1">4.12.1 Functional programming paradigm</a></li>
+							<li><a href="#4.12.2">4.12.2 Writing functional programs</a></li>
+							<li><a href="#4.12.3">4.12.3 Lists in functional programming</a></li>
+							<li><a href="#4.13.1">4.13.1 Aspects of software development</a></li></p>
+						</ul>
+					</div>
+					<div class="RightContent">
+						<h3 id="4.5.1">4.5.1 Number systems</h3>
+						<h2 id="4.5.2">4.5.2 Number bases</h2>
+						<header>
+							<h3>AQA Learning Objectives</h3> 
+							<ul>
+								<li>Understand different number bases, including binary, decimal, and hexadecimal.</li> 
+								<li>Perform conversions between these number bases.</li> 
+								<li>Explain the use of binary in computing.</li> 
+								<li>Understand the impact of 64-bit architecture on computing.</li>
+							</ul> 
+						</header> 
+						<main> 
+							<section> 
+								<h3>4.5.2.1 Number Bases</h3> 
+								<p>The CPU cannot deal with just one bit at a time, it is just too small. It usually deals with
+								8 bits at a time, which is known as a byte. The size of the word depends on the type of computer.
+								A 64-bit processor handles data in 64-bit chunks (8 bytes) per cycle.</p>
+							</section> 
+							<section>
+								<h3>Impact of 64-bit Architecture on RAM, Buses, and Registers</h3>
+								<h4>RAM</h4> 
+								<div class="note">
+									<p>Increased Addressable Memory: A 64-bit system can theoretically address up to 16 exabytes 
+									(2^64 bytes) of RAM, compared to the 4 GB limit of a 32-bit system. This allows for much larger
+									amounts of RAM to be used, which is beneficial for applications requiring significant memory,
+									like video editing, large databases, and virtual machines.</p>
+								</div> 
+								<h4>Buses</h4> 
+								<div class="note"> 
+									<p>Wider Data Paths: The data bus in a 64-bit system can transfer 64 bits of data at a time,
+									doubling the amount of data transferred per cycle compared to a 32-bit system. This can lead 
+									to improved performance, especially in data-intensive tasks.<br>
+									Compatibility: The address bus also needs to support 64-bit addresses to fully utilise the 
+									increased addressable memory space. This ensures that the system can access all the available RAM.</p>
+								</div>
+								<h4>Registers</h4> 
+								<div class="note">
+									<p>Larger Registers: Registers in a 64-bit CPU can hold 64 bits of data, allowing for more
+									efficient processing of large numbers and complex calculations. This is particularly useful in 
+									scientific computing, cryptography, and other fields requiring high precision.<br>
+									Enhanced Performance: With more and larger registers, a 64-bit CPU can handle more data simultaneously,
+									reducing the need for frequent memory access and thus speeding up processing.</p>
+								</div>
+							</section> 
+							<section> 
+								<h3>4.5.2.2 Binary Number System</h3> 
+								<div class="note"> 
+									<p>The binary number system uses only two digits: 0 and 1. Each digit is called a bit. Binary numbers
+									are used internally by computers because they are easy to represent with electrical signals (on/off).</p>
+								</div> 
+								<div class="diagram">
+									<div class="space-for-image"><img src="Images/BinaryNumberSystem.PNG" alt="idek"></div> 
+								</div> 
+								<div class="keyword">Binary, Bit, Base 2</div>
+							</section>
+							<section> 
+								<h3>4.5.2.3 Converting Between Number Systems</h3>
+								<div class="note"> 
+									<p>Converting between binary and decimal involves dividing or multiplying by the base (2 for binary).
+									For example, to convert binary 1010 to decimal: (1 * 2^3) + (0 * 2^2) + (1 * 2^1) + (0 * 2^0) = 8 + 0 
+									+ 2 + 0 = 10.</p>
+								</div>
+								<div class="keyword">Conversion, Base 10, Base 2</div> 
+							</section> 
+							<section> 
+								<h3>4.5.2.4 Significance of Binary in Computing</h3> 
+								<div class="note">
+									<p>Binary is fundamental to computer operations. It is used in data representation, memory addressing,
+									and instruction processing.</p>
+								</div>
+								<div class="keyword">Data Representation, Memory Addressing, Instruction Processing</div>
+							</section> 
+							<section> 
+								<h3>Example Questions</h3>
+								<div class="example-question"> 
+									<p><strong>Question 1:</strong> Convert the binary number 1101 to decimal.</p>
+									<p><strong>Answer:</strong> (1 * 2^3) + (1 * 2^2) + (0 * 2^1) + (1 * 2^0) = 8 + 4 + 0 + 1 = 13</p> 
+								</div>
+								<div class="example-question"> 
+									<p><strong>Question 2:</strong> What is the significance of a 64-bit architecture compared to a 32-bit architecture?</p>
+									<p><strong>Answer:</strong> A 64-bit architecture allows for a greater addressable memory space, wider data paths, and
+									larger registers, leading to more efficient processing and enhanced performance.</p>
+								</div> 
+							</section>
+							<section> 
+								<h3>Resources</h3> 
+								<ul> 
+									<li><a href="https://www.youtube.com/watch?v=DoQV6wp35Gw" target="_blank">Video Tutorial on Binary Conversion</a></li> 
+									<li><a href="https://www.bbc.co.uk/bitesize/guides/zd88jty/revision/2" target="_blank">Article on Binary in Computing</a></li>
+								</ul>
+							</section> 
+							<section> 
+								<h3>Conclusion</h3> 
+								<p>Understanding number systems and binary is crucial for computer science students as it forms the basis of 
+								how computers process and store data.</p>
+							</section> 
+						</main>
+						<footer> 
+							<p class="resource">"An algorithm must be seen to be believed." - Donald Knuth</p>
+						</footer>
+						
+						
+						
+						<h2 id="4.5.3">4.5.3 Units of information</h2>
+                        <header>
+                            <h3>AQA Learning Objectives</h3>
+                            <ul>
+                                <li>Understand different units of information used in computing.</li>
+                                <li>Explain the hierarchy of data units from bits to terabytes.</li>
+                                <li>Perform conversions between different units of information.</li>
+                            </ul>
+                        </header>
+                        <main>
+                            <section>
+                                <h3>4.5.3.1 Introduction to Units of Information</h3>
+                                <p>In computing, data is measured in units of information. The smallest unit is the bit, which can represent a binary value of 0 or 1. Larger units of information are created by grouping multiple bits together.</p>
+                            </section>
+                            <section>
+                                <h3>4.5.3.2 Hierarchy of Data Units</h3>
+                                <table>
+                                    <tr>
+                                        <th>Unit</th>
+                                        <th>Symbol</th>
+                                        <th>Size</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Bit</td>
+                                        <td>bit</td>
+                                        <td>1 bit</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Byte</td>
+                                        <td>B</td>
+                                        <td>8 bits</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kilobyte</td>
+                                        <td>KB</td>
+                                        <td>1024 bytes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Megabyte</td>
+                                        <td>MB</td>
+                                        <td>1024 kilobytes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gigabyte</td>
+                                        <td>GB</td>
+                                        <td>1024 megabytes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Terabyte</td>
+                                        <td>TB</td>
+                                        <td>1024 gigabytes</td>
+                                    </tr>
+                                </table>
+                            </section>
+                            <section>
+                                <h3>4.5.3.3 Converting Between Units</h3>
+                                <div class="note">
+                                    <p>Conversion between different units of information involves multiplying or dividing by 1024. For example, to convert 2048 bytes to kilobytes: 2048 / 1024 = 2 KB.</p>
+                                </div>
+                                <div class="keyword">Conversion, Kilobyte, Megabyte, Gigabyte</div>
+                            </section>
+                            <section>
+                                <h3>Example Questions</h3>
+                                <div class="example-question">
+                                    <p><strong>Question 1:</strong> Convert 5 gigabytes to megabytes.</p>
+                                    <p><strong>Answer:</strong> 5 GB * 1024 = 5120 MB</p>
+                                </div>
+                                <div class="example-question">
+                                    <p><strong>Question 2:</strong> If a file size is 1.5 terabytes, how many gigabytes is this?</p>
+                                    <p><strong>Answer:</strong> 1.5 TB * 1024 = 1536 GB</p>
+                                </div>
+                            </section>
+                            <section>
+                                <h3>Resources</h3>
+                                <ul>
+                                    <li><a href="https://www.youtube.com/watch?v=9kzCoDFrMGE" target="_blank">Video Tutorial on Units of Information</a></li>
+                                    <li><a href="https://www.bbc.co.uk/bitesize/guides/zd88jty/revision/2" target="_blank">Article on Units of Information</a></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>Conclusion</h3>
+                                <p>Understanding the different units of information and their conversions is crucial for working with data in computing. It helps in managing data storage, processing, and transmission effectively.</p>
+                            </section>
+                        </main>
+                        <footer>
+                            <p class="resource">"Information is the oil of the 21st century, and analytics is the combustion engine." - Peter Sondergaard</p>
+                        </footer>
+						
+						
+						
+						<h2 id="4.5.4">4.5.4 Binary number system</h2>
+                        <header>
+                            <h3>AQA Learning Objectives</h3>
+                            <ul>
+                                <li>Understand the binary number system.</li>
+                                <li>Perform binary arithmetic operations.</li>
+                                <li>Explain signed binary using two's complement.</li>
+                            </ul>
+                        </header>
+                        <main>
+                            <section>
+                                <h3>4.5.4.1 Introduction to Binary Number System</h3>
+                                <p>The binary number system is fundamental to computing. It uses only two digits: 0 and 1. Each digit in a binary number is called a bit.</p>
+                                <div class="diagram">
+                                    <div class="space-for-image"><img src="Images/BinaryNumberSystem.PNG" alt="idek"></div>
+                                </div>
+                                <div class="keyword">Binary, Bit, Base 2</div>
+                            </section>
+                            <section>
+                                <h3>4.5.4.2 Binary Arithmetic</h3>
+                                <div class="note">
+                                    <p>Binary arithmetic includes operations such as addition, subtraction, multiplication, and division using binary numbers.</p>
+                                </div>
+                                <h4>Addition</h4>
+                                <div class="note">
+                                    <p>Binary addition follows similar rules to decimal addition but is based on two digits. For example: </p>
+                                    <table>
+                                        <tr>
+                                            <th>Binary</th>
+                                            <th>Operation</th>
+                                            <th>Result</th>
+                                        </tr>
+                                        <tr>
+                                            <td>0 + 0</td>
+                                            <td>=</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>0 + 1</td>
+                                            <td>=</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 + 0</td>
+                                            <td>=</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 + 1</td>
+                                            <td>=</td>
+                                            <td>10 (binary for 2)</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Subtraction</h4>
+                                <div class="note">
+                                    <p>Binary subtraction involves borrowing, similar to decimal subtraction. For example: </p>
+                                    <table>
+                                        <tr>
+                                            <th>Binary</th>
+                                            <th>Operation</th>
+                                            <th>Result</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1 - 0</td>
+                                            <td>=</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1 - 1</td>
+                                            <td>=</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10 - 1</td>
+                                            <td>=</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10 - 10</td>
+                                            <td>=</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h4>Multiplication and Division</h4>
+                                <div class="note">
+                                    <p>Binary multiplication and division follow the same principles as in decimal arithmetic but use only two digits. They can be more complex and involve shifting bits.</p>
+                                </div>
+                            </section>
+                            <section>
+                                <h3>4.5.4.3 Signed Binary Using Two’s Complement</h3>
+                                <div class="note">
+                                    <p>Two’s complement is a method for representing signed binary numbers. It allows positive and negative numbers to be represented and makes binary arithmetic operations straightforward.</p>
+                                </div>
+                                <h4>Steps to Find Two’s Complement:</h4>
+                                <ol>
+                                    <li>Write the binary number.</li>
+                                    <li>Invert all bits (change 0s to 1s and 1s to 0s).</li>
+                                    <li>Add 1 to the least significant bit (rightmost bit).</li>
+                                </ol>
+                                <div class="example-question">
+                                    <p><strong>Example:</strong> Find the two’s complement of 00010101.</p>
+                                    <p><strong>Step 1:</strong> Invert all bits: 11101010</p>
+                                    <p><strong>Step 2:</strong> Add 1: 11101010 + 1 = 11101011</p>
+                                    <p><strong>Result:</strong> 11101011</p>
+                                </div>
+                                <div class="keyword">Two’s Complement, Signed Binary</div>
+                            </section>
+                            <section>
+                                <h3>Resources</h3>
+                                <ul>
+                                    <li><a href="https://www.youtube.com/watch?v=CglODZZm_Z4" target="_blank">Video Tutorial on Two’s Complement</a></li>
+                                    <li><a href="https://www.bbc.co.uk/bitesize/guides/zsnbr82/revision/3" target="_blank">Article on Binary Number System</a></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>Conclusion</h3>
+                                <p>Understanding the binary number system and its arithmetic operations is essential for computer science students. Two’s complement representation is critical for handling signed binary numbers efficiently.</p>
+                            </section>
+                        </main>
+
+                        <footer>
+                            <p class="resource">"In the digital world, everything is binary." - Anonymous</p>
+                        </footer>
+						
+						
+						
+						<h3 id="4.5.5">4.5.5 Information coding systems</h3>
+						<h3 id="4.5.6">4.5.6 Representing images, sound and other data</h3>
+						<h3 id="4.6.1">4.6.1 Hardware and software</h3>
+						<h3 id="4.6.2">4.6.2 Classification of programming languages</h3>
+						<h3 id="4.6.3">4.6.3 Types of program translator</h3>
+						<h2 id="4.6.4">4.6.4 Logic gates</h2>
+                        <header>
+                            <h3>AQA Learning Objectives</h3>
+                            <ul>
+                                <li>Understand the fundamental concepts of logic gates.</li>
+                                <li>Explain the function of different types of logic gates.</li>
+                                <li>Analyze and design simple logic circuits.</li>
+                            </ul>
+                        </header>
+                        <main>
+                            <section>
+                                <h3>Introduction to Logic Gates</h3>
+                                <p>Logic gates are the basic building blocks of digital circuits. They perform logical operations on one or more binary inputs to produce a single binary output.</p>
+                            </section>
+                            <section>
+                                <h3>Types of Logic Gates</h3>
+                                <ul>
+                                    <li><strong>AND Gate:</strong> Outputs true (1) only if all inputs are true (1).</li>
+                                    <li><strong>OR Gate:</strong> Outputs true (1) if at least one input is true (1).</li>
+                                    <li><strong>NOT Gate:</strong> Outputs the opposite (inversion) of the input.</li>
+                                    <li><strong>NAND Gate:</strong> Outputs true (1) if at least one input is false (0); the inverse of AND gate.</li>
+                                    <li><strong>NOR Gate:</strong> Outputs true (1) if all inputs are false (0); the inverse of OR gate.</li>
+                                    <li><strong>XOR Gate:</strong> Outputs true (1) if an odd number of inputs are true (1).</li>
+                                </ul>
+                                <div class="diagram">
+                                    <div class="space-for-image"><img src="Images/BooleanLogicGates.PNG" alt="idek"></div>
+                                </div>
+                                <div class="keyword">AND, OR, NOT, NAND, NOR, XOR</div>
+                            </section>
+                            <section>
+                                <h3>Applications of Logic Gates</h3>
+                                <p>Logic gates are used in various applications, including arithmetic circuits, multiplexers, flip-flops, and memory devices. They are essential for designing and building digital systems such as computers, smartphones, and other electronic devices.</p>
+                                <div class="diagram">
+                                    <div class="space-for-image"><img src="Images/LogicCircuit.JPG" alt="idek"></div>
+                                </div>
+                            </section>
+                            <section>
+                                <h3>Example Questions</h3>
+                                <div class="example-question">
+                                    <p><strong>Question 1:</strong> What is the output of an AND gate if the inputs are 1 and 0?</p>
+                                    <p><strong>Answer:</strong> The output is 0 because an AND gate outputs true (1) only if all inputs are true (1).</p>
+                                </div>
+                                <div class="example-question">
+                                    <p><strong>Question 2:</strong> Design a simple logic circuit using one AND gate and one OR gate with three inputs: A, B, and C.</p>
+                                    <p><strong>Answer:</strong> Connect A and B to the inputs of the AND gate. Connect the output of the AND gate and input C to the inputs of the OR gate. The output of the OR gate is the final output of the circuit.</p>
+                                </div>
+                            </section>
+                            <section>
+                                <h3>Resources</h3>
+                                <ul>
+                                    <li><a href="https://student.craigndave.org/videos/aqa-alevel-slr16-logic-gates-and-truth-tables" target="_blank">Video Tutorial on Logic Gates</a></li>
+                                    <li><a href="https://www.bbc.co.uk/bitesize/guides/zkkkw6f/revision/3#:~:text=Computer%20systems%20%2D%20AQALogic%20gates,used%20to%20form%20logic%20circuits." target="_blank">Article on Logic Gates</a></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>Conclusion</h3>
+                                <p>Logic gates are essential components in digital circuits. Understanding their functions and applications is crucial for designing and analyzing digital systems.</p>
+                            </section>
+                        </main>
+                        <footer>
+                            <p class="resource">"Logic will get you from A to B. Imagination will take you everywhere." - Albert Einstein</p>
+                        </footer>
+						
+						
+						
+						<h2 id="4.6.5">4.6.5 Boolean algebra</h2>
+                        <header>
+                            <h3>AQA Learning Objectives</h3>
+                            <ul>
+                                <li>Understand the principles of Boolean algebra.</li>
+                                <li>Apply Boolean algebra to simplify logical expressions.</li>
+                                <li>Use Boolean algebra in designing and analyzing digital circuits.</li>
+                            </ul>
+                        </header>
+                        <main>
+                            <section>
+                                <h3>Introduction to Boolean Algebra</h3>
+                                <p>Boolean algebra is a mathematical system used to simplify and analyze logical expressions. It uses binary variables and logical operations to represent and manipulate logical statements.</p>
+                            </section>
+                            <section>
+                                <h3>Basic Operations in Boolean Algebra</h3>
+                                <ul>
+                                    <li><strong>AND (•):</strong> Both operands must be true for the result to be true (A • B).</li>
+                                    <li><strong>OR (+):</strong> At least one operand must be true for the result to be true (A + B).</li>
+                                    <li><strong>NOT (¬):</strong> Inverts the value of the operand (¬A).</li>
+                                </ul>
+                                <div class="diagram">
+                                    <div class="space-for-image"><img src="Images/BooleanOperators.PNG" alt="idek"></div>
+                                </div>
+                                <div class="keyword">AND, OR, NOT</div>
+                            </section>
+                            <section>
+                                <h3>Simplification Rules</h3>
+                                <p>Boolean expressions can be simplified using a set of rules:</p>
+                                <ul>
+                                    <li><strong>Identity Law:</strong> A + 0 = A, A • 1 = A</li>
+                                    <li><strong>Null Law:</strong> A + 1 = 1, A • 0 = 0</li>
+                                    <li><strong>Idempotent Law:</strong> A + A = A, A • A = A</li>
+                                    <li><strong>Complement Law:</strong> A + ¬A = 1, A • ¬A = 0</li>
+                                    <li><strong>Double Negation Law:</strong> ¬(¬A) = A</li>
+                                    <li><strong>Commutative Law:</strong> A + B = B + A, A • B = B • A</li>
+                                    <li><strong>Associative Law:</strong> A + (B + C) = (A + B) + C, A • (B • C) = (A • B) • C</li>
+                                    <li><strong>Distributive Law:</strong> A • (B + C) = (A • B) + (A • C)</li>
+                                </ul>
+                                <div class="diagram">
+                                    <div class="space-for-image"><img src="Images/BooleanLaws.JPG" alt="idek"></div>
+                                </div>
+                                <div class="keyword">Boolean Algebra, Simplification, Logical Expressions</div>
+                            </section>
+                            <section>
+                                <h3>Example Questions</h3>
+                                <div class="example-question">
+                                    <p><strong>Question 1:</strong> Simplify the expression A • (A + B).</p>
+                                    <p><strong>Solution:</strong> Using the Distributive Law, A • (A + B) = (A • A) + (A • B). Applying the Idempotent Law, we get A + (A • B). Using the Absorption Law, we finally get A.</p>
+                                </div>
+                                <div class="example-question">
+                                    <p><strong>Question 2:</strong> Simplify the expression ¬(A + B).</p>
+                                    <p><strong>Solution:</strong> Using De Morgan's Law, ¬(A + B) = ¬A • ¬B.</p>
+                                </div>
+                            </section>
+                            <section>
+                                <h3>Resources</h3>
+                                <ul>
+                                    <li><a href="https://student.craigndave.org/videos/aqa-alevel-slr16-de-morgans-law" target="_blank">Video Tutorial on Boolean Algebra</a></li>
+                                    <li><a href="https://studyrocket.co.uk/revision/a-level-computer-science-aqa/fundamentals-of-computer-systems/boolean-algebra" target="_blank">Article on Boolean Algebra</a></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>Conclusion</h3>
+                                <p>Boolean algebra is essential for designing and analyzing digital circuits. Understanding its principles and applying simplification rules can greatly enhance efficiency in working with logical expressions and digital systems.</p>
+                            </section>
+                        </main>
+                        <footer>
+                            <p class="resource">"Logic is the foundation of the certainty of all the knowledge we acquire." - Leonhard Euler</p>
+                        </footer>
+						
+						
+						
+						<h3 id="4.7.1">4.7.1 Internal hardware components of a computer</h3>
+						<h3 id="4.7.2">4.7.2 The stored program concept</h3>
+						<h3 id="4.7.3">4.7.3 Structure and role of the processor and its components</h3>
+						<h3 id="4.7.4">4.7.4 External hardware devices</h3>
+						<h3 id="4.8.1">4.8.1 Individual (moral), social (ethical), legal and cultural issues and opportunities</h3>
+						<h3 id="4.9.1">4.9.1 Communication</h3>
+						<h3 id="4.9.2">4.9.2 Networking</h3>
+						<h3 id="4.9.3">4.9.3 The Internet</h3>
+						<h3 id="4.9.4">4.9.4 The Transmission Control Protocol/Internet Protocol (TCP/IP) protocol</h3>
+						<h3 id="4.10.1">4.10.1 Conceptual data models and entity relationship modelling</h3>
+						<h3 id="4.10.2">4.10.2 Relational databases</h3>
+						<h3 id="4.10.3">4.10.3 Database design and normalisation techniques</h3>
+						<h3 id="4.10.4">4.10.4 Structured Query Language (SQL)</h3>
+						<h3 id="4.10.5">4.10.5 Client server databases</h3>
+						<h3 id="4.11.1">4.11.1 Big Data</h3>
+						<h3 id="4.12.1">4.12.1 Functional programming paradigm</h3>
+						<h3 id="4.12.2">4.12.2 Writing functional programs</h3>
+						<h3 id="4.12.3">4.12.3 Lists in functional programming</h3>
+						<h3 id="4.13.1">4.13.1 Aspects of software development</h3>
+                        <header>
+                            <h3>AQA Learning Objectives</h3>
+                            <ul>
+                                <li>LO1</li>
+                                <li>LO2</li>
+                                <li>LO3</li>
+                            </ul>
+                        </header>
+                        <main>
+                            <section>
+                                <h3>Introduction</h3>
+                                <p></p>
+                            </section>
+                            <section>
+                                <h3>Basic Operations in Boolean Algebra</h3>
+                                <ul>
+                                    <li><strong>AND (•):</strong> Description</li>
+                                    <li><strong>OR (+):</strong> Description</li>
+                                    <li><strong>NOT (¬):</strong> Description</li>
+                                </ul>
+                                <div class="diagram">
+                                    <div class="space-for-image">Diagram of Basic Boolean Operations</div>
+                                </div>
+                                <div class="keyword">AND, OR, NOT</div>
+                            </section>
+                            <section>
+                                <h3>Simplification Rules</h3>
+                                <p><!-- Simplification rules content here --></p>
+                                <ul>
+                                    <li><strong>Identity Law:</strong> Description</li>
+                                    <li><strong>Null Law:</strong> Description</li>
+                                    <li><strong>Idempotent Law:</strong> Description</li>
+                                    <li><strong>Complement Law:</strong> Description</li>
+                                    <li><strong>Double Negation Law:</strong> Description</li>
+                                    <li><strong>Commutative Law:</strong> Description</li>
+                                    <li><strong>Associative Law:</strong> Description</li>
+                                    <li><strong>Distributive Law:</strong> Description</li>
+                                </ul>
+                                <div class="diagram">
+                                    <div class="space-for-image">Diagram of Simplification Rules</div>
+                                </div>
+                                <div class="keyword">Boolean Algebra, Simplification, Logical Expressions</div>
+                            </section>
+                            <section>
+                                <h3>Example Questions</h3>
+                                <div class="example-question">
+                                    <p><strong>Question 1:</strong> <!-- Example question 1 here --></p>
+                                    <p><strong>Solution:</strong> <!-- Example solution 1 here --></p>
+                                </div>
+                                <div class="example-question">
+                                    <p><strong>Question 2:</strong> <!-- Example question 2 here --></p>
+                                    <p><strong>Solution:</strong> <!-- Example solution 2 here --></p>
+                                </div>
+                            </section>
+                            <section>
+                                <h3>Resources</h3>
+                                <ul>
+                                    <li><a href="#" target="_blank">Video Resource</a></li>
+                                    <li><a href="#" target="_blank">Article Resource</a></li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>Conclusion</h3>
+                                <p><!-- Conclusion content here --></p>
+                            </section>
+                        </main>
+                        <footer>
+                            <p class="resource">"Quote or resource here."</p>
+                        </footer>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
